@@ -6,12 +6,14 @@ describe('Funcionalidade Página de produtos', () => {
         cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
     });
 
+    afterEach(() => {
+        cy.screenshot()
+    });
+
     it('Deve selecionar um produto da lista', () => {
         cy.get('[class="product-block grid"]')
             .contains('Abominable Hoodie')
             .click()
-            
-         
     });
 
     it.only('Deve adicionar um produto ao carrinho', () => {

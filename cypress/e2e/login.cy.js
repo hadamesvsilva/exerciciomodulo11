@@ -16,7 +16,7 @@ describe ('Funcionalidade Login', () =>{
         cy.get('.woocommerce-form > .button').click()
 
         cy.get('.page-title').should('contain' , 'Minha conta')
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, aluno_ebac (não é aluno_ebac? Sair)')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, Aluno (não é Aluno? Sair)')
     })
 
     it('Deve exibir uma mensagem de erro ao inserir usuario invalido', () => {

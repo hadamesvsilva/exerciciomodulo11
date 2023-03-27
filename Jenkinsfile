@@ -7,7 +7,7 @@
     stages {
         stage('Clonar o repositorio') {
             steps {
-                git branch: 'main', url: 'https://github.com/hadamesvsilva/exerciciomodulo11'
+                git branch: 'main', url: 'https://github.com/hadamesvsilva/exerciciomodulo11.git'
             }
         }
         stage('Instalar dependencias'){
